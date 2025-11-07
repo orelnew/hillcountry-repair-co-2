@@ -24,7 +24,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <img src={logo} alt="Hill Country Repair Co." className="h-32 w-32 mx-auto mb-6 animate-in fade-in zoom-in duration-700" />
+          <img src={logo} alt="Hill Country Repair Co." className="h-32 w-32 md:h-48 md:w-48 mx-auto mb-6 animate-in fade-in zoom-in duration-700" />
           
           <h1 className="text-5xl md:text-7xl font-bold text-cream animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
             Quality Work at
@@ -43,10 +43,9 @@ const Hero = () => {
             >
               Get Your Free Quote
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-2 border-cream text-cream hover:bg-cream hover:text-navy text-lg px-8 py-6"
+            <Button
+              size="lg"
+              className="bg-cream text-navy hover:bg-cream/90 hover:text-navy text-lg px-8 py-6"
               onClick={() => window.location.href = 'tel:+12548005322'}
             >
               <Phone className="mr-2 h-5 w-5" />

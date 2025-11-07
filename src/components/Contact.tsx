@@ -75,8 +75,7 @@ const Contact = () => {
               </Button>
               <Button
                 size="lg"
-                variant="outline"
-                className="border-2 border-cream !text-cream hover:bg-cream hover:!text-navy"
+                className="bg-cream text-navy hover:bg-cream/90 hover:text-navy"
                 onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}
               >
                 <Mail className="mr-2 h-5 w-5" />
