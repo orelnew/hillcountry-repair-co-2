@@ -1,19 +1,20 @@
 import { Button } from "@/components/ui/button";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import { Phone, Mail } from "lucide-react";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const isHomePage = location.pathname === "/";
 
   const scrollToSection = (id: string) => {
     if (!isHomePage) {
-      // Navigate to home page first, then scroll
-      window.location.href = `/#${id}`;
+      // Navigate to home page with hash
+      navigate(`/#${id}`);
     } else {
       const element = document.getElementById(id);
-      element?.scrollIntoView({ behavior: "smooth" });
+      element?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
