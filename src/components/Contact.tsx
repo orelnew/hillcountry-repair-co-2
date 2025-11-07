@@ -73,10 +73,10 @@ const Contact = () => {
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now for Free Quote
               </Button>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="outline"
-                className="border-2 border-cream text-cream hover:bg-cream hover:text-navy"
+                className="border-2 border-cream !text-cream hover:bg-cream hover:!text-navy"
                 onClick={() => window.location.href = 'mailto:hillcountryrepairco@gmail.com'}
               >
                 <Mail className="mr-2 h-5 w-5" />
