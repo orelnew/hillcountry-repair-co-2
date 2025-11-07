@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/Austin.png";
 import logo from "@/assets/logo.png";
 import { Phone } from "lucide-react";
 
