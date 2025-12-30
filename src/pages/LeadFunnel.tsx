@@ -394,16 +394,26 @@ const LeadFunnel = () => {
           </div>
 
           <div className="pt-8 space-y-4">
-            <p className="text-gray-600">
-              In the meantime, feel free to explore our services and previous projects.
+            <p className="text-gray-600 mb-6">
+              Want to discuss your project sooner? Book a meeting with us now!
             </p>
-            <Button
-              onClick={() => navigate("/")}
-              size="lg"
-              className="text-lg px-8"
-            >
-              Return to Homepage
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                onClick={() => navigate("/book-meeting")}
+                size="lg"
+                className="text-lg px-8"
+              >
+                Book a Meeting
+              </Button>
+              <Button
+                onClick={() => navigate("/")}
+                variant="outline"
+                size="lg"
+                className="text-lg px-8"
+              >
+                Return to Homepage
+              </Button>
+            </div>
           </div>
         </div>
       </div>

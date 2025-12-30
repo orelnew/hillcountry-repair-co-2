@@ -23,6 +23,7 @@ import ContactPage from "./pages/ContactPage";
 import OurApproach from "./pages/OurApproach";
 import LeadFunnel from "./pages/LeadFunnel";
 import RoofingLeadFunnel from "./pages/RoofingLeadFunnel";
+import BookMeeting from "./pages/BookMeeting";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/our-approach" element={<OurApproach />} />
           <Route path="/get-started" element={<LeadFunnel />} />
           <Route path="/roofing-estimate" element={<RoofingLeadFunnel />} />
+          <Route path="/book-meeting" element={<BookMeeting />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
