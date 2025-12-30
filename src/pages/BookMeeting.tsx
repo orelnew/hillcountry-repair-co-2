@@ -1,5 +1,5 @@
 import { InlineWidget } from "react-calendly";
-import { Clock, MapPin, CheckCircle } from "lucide-react";
+import { Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import logo from "@/assets/logo.png";
@@ -30,15 +30,9 @@ const BookMeeting = () => {
 
             {/* Quick Instructions */}
             <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6 max-w-3xl mx-auto shadow-sm">
-              <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700 mb-4">
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span>Choose a quiet location (home or office)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span>Block out 30 minutes for maximum value</span>
-                </div>
+              <div className="flex items-center justify-center gap-2 text-sm text-gray-700 mb-4">
+                <Clock className="h-4 w-4 text-primary flex-shrink-0" />
+                <span>Block out 30 minutes for maximum value</span>
               </div>
               <p className="text-sm text-gray-600 text-center">
                 This call will help us understand your project needs and provide you with an accurate estimate.
